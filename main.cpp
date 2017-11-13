@@ -7,7 +7,10 @@ int main()
     int *a=nullptr;
     cin >> n;
     if (n <= 0)
+    {
+        cout << "An error has occurred while reading input data";
         return 0;
+    }
     a=new int[n];
     for (i = 0; i < n; i++) {
         cin >> a[i];
