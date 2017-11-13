@@ -12,17 +12,17 @@ int main()
         cin >> a[i];
     }
     cin >> x;
-    int b[x - 1], c[n - x - 1];
-    for (i = 0; i < x; i++) {
+    int b[x%n - 1], c[n - x%n - 1];
+    for (i = 0; i < x%n; i++) {
         b[i] = a[i];
     }
-    for (i = 0; i < n - x; i++) {
-        c[i] = a[i + x];
+    for (i = 0; i < n - x%n; i++) {
+        c[i] = a[i + x%n];
     }
-    for (i = 0; i < n - x; i++) {
+    for (i = 0; i < n - x%n; i++) {
         cout << c[i] << " ";
     }
-    for (i = 0; i < x; i++) {
+    for (i = 0; i < x;%n i++) {
         cout << b[i] << " ";
     }
     return 0;
