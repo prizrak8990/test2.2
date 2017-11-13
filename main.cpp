@@ -5,6 +5,8 @@ int main()
 {
     int i, n, x;
     int *a=nullptr;
+    int *b=nullptr;
+    int *c=nullptr;
     cin >> n;
     if (n <= 0)
     {
@@ -16,7 +18,8 @@ int main()
         cin >> a[i];
     }
     cin >> x;
-    int b[x%n - 1], c[n - x%n - 1];
+    b=new int[x];
+    c=new int[n - x%n - 1];
     for (i = 0; i < x%n; i++) {
         b[i] = a[i];
     }
